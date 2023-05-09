@@ -114,7 +114,8 @@ void print_data(unsigned char *e_ident)
 /**
  *  * print_version - Prints the version of an ELF header.
  *   * @e_ident: A pointer to an array containing the ELF version.
- *    */
+ *    
+ */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
@@ -270,7 +271,7 @@ void close_elf(int elf)
  * Description: If the file is not an ELF File or
  * the function fails - exit code 98.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int _attribute_((_unused_)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int o, r;
